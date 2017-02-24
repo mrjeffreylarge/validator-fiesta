@@ -1,6 +1,10 @@
 var Validate = require('git-validate');
 
 Validate.copy('eslintrc', '.eslintrc');
+Validate.copy('eslintrc-strict', '.eslintrc-strict');
 
 Validate.installScript('eslint', 'eslint .');
-Validate.configureHook('pre-commit', ['eslint']);
+Validate.installScript('eslint-strict', 'eslint -c .eslintrc-strict.');
+
+Validate.configureHook('pre-commit#dev', ['eslint']);
+Validate.configureHook('pre-commit#master', ['eslint-strict']);
