@@ -1,7 +1,7 @@
 var Validate = require('git-validate');
 
-Validate.copy('eslintrc', '.eslintrc');
-Validate.copy('eslintrc-strict', '.eslintrc-strict');
+Validate.copy('js/eslintrc', '.eslintrc');
+Validate.copy('js/eslintrc-strict', '.eslintrc-strict');
 
 Validate.installScript('eslint', 'eslint .');
 Validate.installScript('eslint-strict', 'eslint -c .eslintrc-strict.');
