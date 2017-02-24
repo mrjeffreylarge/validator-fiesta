@@ -1,3 +1,3 @@
 var Validate = require('git-validate');
 
-Validate.copy('jshintrc', '.jshintrc');
+Validate.copy('eslintrc', '.eslintrc');
