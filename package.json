@@ -1,0 +1,23 @@
+{
+  "name": "validator-fiesta",
+  "version": "1.0.0",
+  "description": "pulls in linters and integrated with git hooks",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrjeffreylarge/validator-fiesta.git"
+  },
+  "author": "Jeff Umbricht",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/mrjeffreylarge/validator-fiesta/issues"
+  },
+  "homepage": "https://github.com/mrjeffreylarge/validator-fiesta#readme",
+  "dependencies": {
+    "git-validate": "^2.2.2"
+  }
+}
